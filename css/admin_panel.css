@@ -1,0 +1,134 @@
+main{
+    display: flex !important;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 17px;
+}
+h2{
+    margin-bottom: 100px !important;
+    margin-top: 100px !important;
+}
+.user_panel h2{
+    text-align: center;
+}
+.panel_section{
+    background: #fff;
+    border-radius: 25px;
+    padding: 20px;
+    margin-top: 50px;
+}
+.space_betweenPanel{
+    display: flex;
+    justify-content: space-between;
+}
+.user_panel .space_betweenPanel{
+    width: 55%;
+}
+.admin_panel .space_betweenPanel{
+    width: 65%;
+}
+.user_panel{
+    width: 60%;
+}
+.user_panel .btn{
+    margin: 5px;
+}
+
+@media screen and (max-width: 1440px) {
+    main {
+      width: 100% !important;
+    }
+    .space_betweenPanel{
+        width: 100% !important;
+    }
+    .panel_section:last-child .space_betweenPanel{
+        width: 100% !important;
+    }
+  }
+input{
+    outline: none;
+    border-radius: 15px;
+    border: 2px solid #282333;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+select{
+    outline: none;
+    border-radius: 15px;
+    padding: 5px;
+    border: 2px solid #282333;
+}
+optgroup{
+    border-radius: 10px !important;
+}
+
+option:hover{
+    background: #0078ff !important;
+}
+label[for=zatwierdz_admin]{
+    margin-top: 50px !important;
+    display: flex;
+    justify-content: center;
+}
+label[for=del_k]{
+    width: 40% !important;
+}
+.center_Panel{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.paragraph{
+    padding-left: 20px;
+}
+.splash{
+    background-image: url("../png/splash2.png");
+    z-index: -1;
+    display: block;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .btn-warning{
+    background: #FFD740 !important;
+    border: #FFD740  !important;
+    border-radius: 25px !important;
+    width: 150px;
+    color: white !important;
+}
+/*PHP INFO O ZALOGOWANYM UŻYTKOWNIKU*/
+#userInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fa-home{
+    font-size: 45px !important;
+    padding-left: 20px;
+    color: #201c29 !important;
+}
+#userInfo>a:first-of-type{
+    transition: all 0.2s;
+}
+#userInfo>a:first-of-type:hover{
+    transform: scale(1.2);
+    transition: all 0.4s;
+}
+#userInfoButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+    margin-right: 50px;
+    background: white;
+    border-radius: 25px;
+    font-size: 30px;
+}
+#userInfoButton:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+#userInfo a{
+    text-decoration: none;
+}
